@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  test:
+    container_name: test
+    build: 
+      context: ./
+      dockerfile: DockerFile
+    volumes: 
+      - ./:/app
+    command:
+      make run
